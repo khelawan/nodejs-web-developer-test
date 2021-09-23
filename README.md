@@ -1,10 +1,8 @@
 # nodejs-web-developer-test
 
-Your mission, should you choose to accept it, is to construct a working Node.js web application from scratch. The following web service generates 10 random programming jokes as a JSON list: https://official-joke-api.appspot.com/jokes/programming/ten
+Your mission, should you choose to accept it, is to construct a working Apple iTunes search page. We will leverage the free-to-use Apple iTunes api. The docs can be found [here](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/).
 
-At a minimum, you should render these jokes on a single page web app. However you want to process the JSON and then serve the html file is up to you. This is your chance to show us *everything* you know how to do. We *expect* you to do more than just the minimum.
-
-Here is a helpful tip: Think about the end-user experience when the user visits the page. Do you show the punchline right away? Do you show all the jokes at once? How do you check for duplicate jokes? Can you think of additional features?
+Think about the end-user experience when the user visits the page. What should they see when they first load the page? How do you display the results? What other features can you provide? This is your chance to show us *everything* you know how to do. We *expect* you to do more than just the minimum.
 
 A simple, working server.js file is provided to help get you started. The only prerequisite is installing [Node LTS](https://nodejs.org).
 
