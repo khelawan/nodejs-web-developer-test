@@ -4,7 +4,7 @@ Your mission, should you choose to accept it, is to construct a working Apple iT
 
 Think about the end-user experience when the user visits the page. What should they see when they first load the page? How do you display the results? What other features can you provide? This is your chance to show us *everything* you know how to do. We *expect* you to do more than just the minimum.
 
-A simple, working server.js file is provided to help get you started. The only prerequisite is installing [Node LTS](https://nodejs.org).
+A simple, working server.js file is provided to help get you started. The only prerequisite is installing [Node LTS](https://nodejs.org) and you must use [React](https://reactjs.org/) on the front end.
 
 Rules:
 - You must fork this repository to your own Github account.
