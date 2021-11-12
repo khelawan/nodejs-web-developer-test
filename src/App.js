@@ -2,23 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/search';
 import ItemsList from './components/cardlist';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 
 const Content = styled.div`width: 100%;	height: 100%;`;
 const mediaTypes = ['movie','podcast','music','musicVideo','audiobook','shortFilm','tvShow','software','ebook','all',];
 
 async function itunesApiRequest(term, media = 'all') {const url = new URL('https://itunes.apple.com/search');
-	const params = {country: 'IN',	lang: 'en_us',limit: 50,term,media,};
+	const params = {country: 'IN',	lang: 'en_us',limit: 50, term,media,};
 	try {
 		url.search = new URLSearchParams(params);
 		const response = await fetch(url);
 		const data = await response.json();
-		console.log(data);
-        
+		
+        if(data.results.length == 0){
+			alert("No data found");
+		}
 		return data;
 	} catch (error) {
 		console.error(error);
+		
+
 	}
 }
 class App extends React.Component {
